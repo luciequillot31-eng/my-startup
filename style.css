@@ -1,11 +1,46 @@
-@import url("container.css");
-@import url("button.css");
-@import url("banner.css");
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
 }
+
+/* Banner */
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+  color: white;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.banner h2 {
+  font-size: 24px;
+  margin: 15px 0 30px;
+}
+
+/* Button */
+.btn-blue {
+  background-color: #1EDD88;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Layout */
+.container {
+  width: 900px;
+  margin: 40px auto;
+}
+
+/* Cards */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -14,27 +49,38 @@ body {
 .card {
   display: flex;
   align-items: center;
-
   flex-basis: 300px;
   flex-grow: 1;
-
   margin: 10px;
   padding: 20px;
-
   background: white;
   border-radius: 6px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
-/* 🔥 FIX ICI */
+/* 🔥 FIX IMAGES */
 .card img {
-  width: 100px;        /* taille contrôlée */
-  height: 100px;       /* carré propre */
-  min-width: 100px;    /* empêche de s'étirer */
-  object-fit: cover;   /* crop propre */
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  object-fit: cover;
   border-radius: 6px;
 }
 
+.card h3 {
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+/* Typeform spacing */
+#typeform {
+  margin-top: 50px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
 .card h3 {
   flex-grow: 1;
   padding-left: 20px;
