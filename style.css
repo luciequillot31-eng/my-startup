@@ -1,0 +1,42 @@
+@import url("components/container.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+
+  flex-basis: 300px;
+  flex-grow: 1;
+
+  margin: 10px;
+  padding: 20px;
+
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* 🔥 FIX ICI */
+.card img {
+  width: 100px;        /* taille contrôlée */
+  height: 100px;       /* carré propre */
+  min-width: 100px;    /* empêche de s'étirer */
+  object-fit: cover;   /* crop propre */
+  border-radius: 6px;
+}
+
+.card h3 {
+  flex-grow: 1;
+  padding-left: 20px;
+  font-size: 22px;
+}
